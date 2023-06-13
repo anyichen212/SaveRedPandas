@@ -1,3 +1,4 @@
+
 body {
     background-color: #96cc73a1;
     color: #713e12;
@@ -6,9 +7,10 @@ body {
   h1 {
     font-size: 24px;
     color: #E54624;
+
   }
  
-  p {
+p{
     font-size: 14px;
   }
 
@@ -18,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: 96cc73a;
+  background-color: 9cc73a;
 }
 
 li {
@@ -42,6 +44,6 @@ li a:hover {
 }
 
  
-  #header {
+#header{
     background-image: url(header.jpg);
   }
