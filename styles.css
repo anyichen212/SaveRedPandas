@@ -1,16 +1,48 @@
-body{
-    background-color: #FFFFFF;
-    color: #000000;
+
+body {
+    background-color: #96cc73a1;
+    color: #713e12;
   }
  
-h1{
-    font-size: 30px;
-    color: #FF0000;
+  h1 {
+    font-size: 24px;
+    color: #E54624;
+
   }
  
 p{
     font-size: 14px;
   }
+
+  
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: 9cc73a;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #E54624;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #97cc73bb;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
  
 #header{
     background-image: url(header.jpg);
