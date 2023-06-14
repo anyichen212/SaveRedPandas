@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="styles.css">
+  <title> Donate </title>
+  <style>
+    #donation-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    #donation-form label,
+    #donation-form input,
+    #donation-form button {
+      margin: 10px;
+    }
+
+
+    h1{
+        text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Donate to Save the Red Pandas </h1>
+  
+  <p>Red pandas are an endangered species, and we need your help to protect them. 
+    Your donation will go towards conservation efforts, habitat restoration, 
+    and raising awareness about the importance of preserving these beautiful creatures. 
+ No amount donated is too small.
+</p>
+  <img src="asset/red2.jpg" alt="Red Panda" style="margin: 5px;" width="200">
+
+  <div id="donation-form">
+    <label for="amount">Donation Amount:</label>
+    <input type="number" id="amount" step="0.01" required><br>
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br>
+    
+    <button onclick="processDonation()">Donate</button>
+  </div>
+  
+  <p id="donation-status"></p>
+  
+  <script>
+    function processDonation() {
+      var amount = document.getElementById("amount").value;
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      
+      // Here, you can validate any and all on the forms fields
+      
+      // Simulation of a successful donation
+      var donationStatus = document.getElementById("donation-status");
+      donationStatus.textContent = "Thank you, " + name + "! Your donation of $" + amount + " has been received.";
+      
+      // You can also perform additional actions such as sending donation details to a backend server
+      
+      // Clearing the form fields
+      document.getElementById("amount").value = "";
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+    }
+  </script>
+  
+  <footer>
+    <p>&copy; TTPSummer2023 Save Red Pandas. All rights reserved.</p>
+  </footer>
+</body>
+</html>
